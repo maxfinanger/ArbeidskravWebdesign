@@ -5,3 +5,15 @@
 article {
     margin-bottom: 1rem; /* Adjust the value as per your preference */
 }
+
+.card-content {
+    margin-top: auto;
+}
+
+.warrior-image {
+    width: 100%; /* Make the image take the full width of the card. */
+    max-height: 400px; /* Set a maximum height. */
+    object-fit: contain; /* Ensure images scale without cropping, fitting within the card's dimensions. */
+    display: block; /* Remove any extra space below the image. */
+    margin: 0 auto; /* Center the image horizontally if it doesn't occupy the full width. */
+}
