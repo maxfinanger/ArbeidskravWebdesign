@@ -2,3 +2,6 @@
     main.css is the usual name for a CSS which will be used on all/most pages.
 */
 
+article {
+    margin-bottom: 1rem; /* Adjust the value as per your preference */
+}
