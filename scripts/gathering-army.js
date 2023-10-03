@@ -8,8 +8,9 @@ const showWarriors = () => {
     warriorDiv.innerHTML = "";
 
     warriors.forEach((warrior) => {
+        htmlTxt = "";
         const warriorItem = document.createElement("li");
-        warriorItem.innerHTML = `
+        htmlTxt += `
             <div class="warrior">
                 <img src="img/${warrior.img}" alt="${warrior.name}" />
                 <div class="warrior-info">
@@ -18,7 +19,7 @@ const showWarriors = () => {
                 </div>
             </div>
         `;
-        warriorDiv.appendChild(warriorItem);
+        warriorDiv.innerHTML = htmlTxt;
     });
 
     (function () {
