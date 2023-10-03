@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <title>Get resources</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center mt-5">Gathering Resources</h1>
 
-</body>
+      <div class="text-center m-5">
+        <img src="images/wood.png" width="10%" alt="Wood" />
+        <span id="metal-count">0</span>
+        <img src="images/metal.png" width="10%" alt="" />
+        <span id="metal-count">0</span>
+        <img src="images/gold-coin.png" width="10%" alt="Gold coin" />
+        <span id="gold-count">0</span>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-md-6 resource" id="mine">
+          <img
+            id="mine-img"
+            src="images/mines-of-thiartha.jpg"
+            alt="Image of mines"
+            class="img-fluid rounded-pill shadow mb-5"
+          />
+        </div>
+
+        <div class="col-md-6 resource" id="woods">
+          <img
+            id="woods-img"
+            src="images/woods-of-ghalduz.png"
+            alt="Image of a forest"
+            class="img-fluid rounded-pill shadow"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
