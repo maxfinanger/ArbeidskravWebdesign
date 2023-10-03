@@ -1,4 +1,5 @@
 import WarriorModule from "./Modules/WarriorModule.js";
+import LocalStorageModule from "./Modules/LocalStorageModule.js";
 
 const warriorDiv = document.getElementById("warrior-div");
 const warriors = WarriorModule.getAll();
@@ -33,6 +34,10 @@ const getWarrior = (id) => {
     const warriors = WarriorModule.getAll();
     const warrior = warriors.find((warrior) => warrior.id === id);
     console.log(warrior);
+    const army = LocalStorageModule.GetArmy();
+    army.push(warrior);
+    LocalStorageModule.SaveArmy(army);
+    console.log(LocalStorageModule.GetArmy());
 };
 
 // adds event listeners to all warrior buttons
