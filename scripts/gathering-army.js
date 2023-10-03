@@ -18,7 +18,7 @@ const showWarriors = () => {
                     <h2>${warrior.name}</h2>
                     <p>Health: ${warrior.health}</p>
                 </div>
-                <button class="mt-auto btn bg-danger text-white" id="warrior-button-${warrior.id}">Buy for ${warrior.price} <img src="/images/gold-coin.png" class="coin"> </button>
+                <button class="mt-auto btn bg-danger text-white hover " id="warrior-button-${warrior.id}">Buy for ${warrior.price} <img src="/images/gold-coin.png" class="coin"> </button>
             </div>
         </article>
         `;
