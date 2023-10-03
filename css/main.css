@@ -1,7 +1,11 @@
 /*
-    main.css is the usual name for a CSS which will be used on all/most pages.
+    Main CSS file for the website.
 */
 
+/* 
+    These 4 css files below style the gathering-army page, if they interfere with subsucent pages, 
+    they can be moved to a new specific file.
+*/
 article {
     margin-bottom: 1rem; /* Adjust the value as per your preference */
 }
@@ -17,3 +21,10 @@ article {
     display: block; /* Remove any extra space below the image. */
     margin: 0 auto; /* Center the image horizontally if it doesn't occupy the full width. */
 }
+
+.coin {
+    height: 1.2rem;
+}
+
+/* END OF GATHERING STYLING */
+
