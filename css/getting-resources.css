@@ -1,3 +1,11 @@
 /*
     Do you need a dedicated CSS file per HTML page in addition to main.css?
 */
+
+#woods-img:hover {
+  scale: 105%;
+}
+
+#mine-img:hover {
+  scale: 105%;
+}
