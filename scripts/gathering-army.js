@@ -34,8 +34,10 @@ const getWarrior = (id) => {
     const warriors = WarriorModule.getAll();
     const warrior = warriors.find((warrior) => warrior.id === id);
     console.log(warrior);
+
     const army = LocalStorageModule.GetArmy();
     army.push(warrior);
+
     LocalStorageModule.SaveArmy(army);
     console.log(LocalStorageModule.GetArmy());
 };
@@ -52,6 +54,10 @@ const warriorbtn = () => {
     });
 };
 
+const resetLocalStorage = () => {
+    LocalStorageModule.DeleteAll();
+};
+
 // sets all events
 const setEvents = () => {
     warriorbtn();
@@ -61,4 +67,5 @@ const setEvents = () => {
 (() => {
     showWarriors();
     setEvents();
+    //resetLocalStorage();
 })();

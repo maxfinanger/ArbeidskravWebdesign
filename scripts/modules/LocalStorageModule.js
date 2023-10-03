@@ -1,41 +1,30 @@
 const LocalStorageModule = (() => {
     const SaveArmy = (army) => {
-        for (let warrior of army) {
-            const id = warrior.id;
-
-            const newWarrior = {
-                id: id,
-                name: warrior.name,
-                health: warrior.health,
-                img: warrior.img,
-            };
-
-            const json = JSON.stringify(newWarrior);
-            localStorage.setItem(`${id}`, json);
-        }
+        const json = JSON.stringify(army);
+        localStorage.setItem("army", json);
     };
 
+    // Gets the army from local storage and returns it as an array
     const GetArmy = () => {
-        const army = [];
-
-        for (let i = 0; i < localStorage.length; i++) {
-            const key = localStorage.key(i);
-            const json = localStorage.getItem(key);
-            const warrior = JSON.parse(json);
-            army.push(warrior);
-        }
-
-        return army;
+        const json = localStorage.getItem("army");
+        return json ? JSON.parse(json) : [];
     };
 
+    // Deletes a warrior from local storage by id, (this is not currently in use in the project)
     const DeleteWarrior = (id) => {
         localStorage.removeItem(id);
+    };
+
+    // Deletes all items from local storage
+    const DeleteAll = () => {
+        localStorage.clear();
     };
 
     return {
         SaveArmy,
         GetArmy,
         DeleteWarrior,
+        DeleteAll,
     };
 })();
 
