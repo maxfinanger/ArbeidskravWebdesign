@@ -9,3 +9,7 @@
 #mine-img:hover {
   scale: 105%;
 }
+
+#mine:hover {
+  cursor: url("/images/pickaxe-cursor.png"), auto;
+}
