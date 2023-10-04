@@ -4,12 +4,10 @@
 
 #woods-img:hover {
   scale: 105%;
-}
-
-#mine-img:hover {
-  scale: 105%;
+  cursor: url("/images/axe-cursor.png"), auto;
 }
 
 #mine:hover {
+  scale: 105%;
   cursor: url("/images/pickaxe-cursor.png"), auto;
 }
