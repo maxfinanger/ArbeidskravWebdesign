@@ -14,22 +14,24 @@ article {
     margin-top: auto;
 }
 
-.warrior-image {
-    width: 100%; /* Make the image take the full width of the card. */
-    max-height: 400px; /* Set a maximum height. */
-    object-fit: contain; /* Ensure images scale without cropping, fitting within the card's dimensions. */
-    display: block; /* Remove any extra space below the image. */
-    margin: 0 auto; /* Center the image horizontally if it doesn't occupy the full width. */
-}
-
 .coin {
     height: 1.2rem;
 }
 
+/* Default styling for larger screens */
+.warrior-image,
 .card-img-top {
     width: 100%;
     height: 30vw;
     object-fit: cover;
+}
+
+/* Media query for screens smaller than 768px (common breakpoint for tablets) */
+@media only screen and (max-width: 767px) {
+    .warrior-image,
+    .card-img-top {
+        height: 120vw; /* Adjust this as needed for mobile view */
+    }
 }
 
 /* END OF GATHERING STYLING */
