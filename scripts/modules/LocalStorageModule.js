@@ -20,11 +20,23 @@ const LocalStorageModule = (() => {
         localStorage.clear();
     };
 
+    const SaveResources = (resources) => {
+        const json = JSON.stringify(resources);
+        localStorage.setItem("resources", json);
+    };
+
+    const GetResources = () => {
+        const json = localStorage.getItem("resources");
+        return json ? JSON.parse(json) : [];
+    };
+
     return {
         SaveArmy,
         GetArmy,
         DeleteWarrior,
         DeleteAll,
+        SaveResources,
+        GetResources,
     };
 })();
 
