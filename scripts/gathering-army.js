@@ -39,8 +39,6 @@ const showEquipment = () => {
                 <div class="card-content mb-auto">
                     <img src="images/${equipment.image}" alt="${equipment.name}" class="card-img-top">
                     <h2>${equipment.name}</h2>
-                    <p>Wood: ${equipment.wood}</p>
-                    <p>Metal: ${equipment.metal}</p>
                 </div>
                 <button class="mt-auto btn bg-danger text-white hover " id="equipment-button-${equipment.id}">Buy for ${equipment.wood} <img src="/images/wood.png" class="coin"> and ${equipment.metal} <img src="/images/metal.png" class="coin"></button>
             </div>

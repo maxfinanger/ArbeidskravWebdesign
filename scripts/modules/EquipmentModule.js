@@ -2,28 +2,28 @@ const EquipmentModule = (function () {
     const equipment = [
         {
             id: 201,
-            name: "horse",
+            name: "Horse",
             wood: 10,
             metal: 5,
             image: "horse.png",
         },
         {
             id: 202,
-            name: "elephant",
+            name: "Elephant",
             wood: 15,
             metal: 10,
             image: "elephant.png",
         },
         {
             id: 203,
-            name: "catapult",
+            name: "Catapult",
             wood: 20,
             metal: 40,
             image: "catapult.png",
         },
         {
             id: 204,
-            name: "cannon",
+            name: "Cannon",
             wood: 30,
             metal: 50,
             image: "cannon.png",
