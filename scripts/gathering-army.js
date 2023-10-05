@@ -42,7 +42,7 @@ const showEquipment = () => {
                     <p>Wood: ${equipment.wood}</p>
                     <p>Metal: ${equipment.metal}</p>
                 </div>
-                <button class="mt-auto btn bg-danger text-white hover " id="equipment-button-${equipment.id}">Buy for ${equipment.wood} wood and ${equipment.metal} metal</button>
+                <button class="mt-auto btn bg-danger text-white hover " id="equipment-button-${equipment.id}">Buy for ${equipment.wood} <img src="/images/wood.png" class="coin"> and ${equipment.metal} <img src="/images/metal.png" class="coin"></button>
             </div>
         </article>
         `;
@@ -114,7 +114,7 @@ const getEquipment = (id) => {
 
     // Check if the player can afford the equipment
     if (!canAffordEquipment(equipment.wood, equipment.metal)) {
-        console.log("You don't have enough resources to buy this equipment.");
+        notify("You don't have enough resources to buy this equipment.");
         return;
     }
 
