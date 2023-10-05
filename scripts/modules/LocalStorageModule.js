@@ -43,6 +43,16 @@ const LocalStorageModule = (() => {
         }
     };
 
+    const SaveInventory = (inventory) => {
+        const json = JSON.stringify(inventory);
+        localStorage.setItem("inventory", json);
+    };
+
+    const GetInventory = () => {
+        const json = localStorage.getItem("inventory");
+        return json ? JSON.parse(json) : [];
+    };
+
     return {
         SaveArmy,
         GetArmy,
@@ -50,6 +60,8 @@ const LocalStorageModule = (() => {
         DeleteAll,
         SaveResources,
         GetResources,
+        SaveInventory,
+        GetInventory,
     };
 })();
 
