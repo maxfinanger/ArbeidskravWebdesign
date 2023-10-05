@@ -1,5 +1,5 @@
 import LocalStorageModule from "./modules/LocalStorageModule";
-import WarriorModule from "./Modules/WarriorModule";
+import WarriorModule from "./modules/WarriorModule";
 
 //const outputArmySection = document.querySelector("#output-section");
 
