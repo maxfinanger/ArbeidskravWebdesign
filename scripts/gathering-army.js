@@ -1,5 +1,5 @@
-import WarriorModule from "./Modules/WarriorModule.js";
-import LocalStorageModule from "./Modules/LocalStorageModule.js";
+import WarriorModule from "./modules/WarriorModule.js";
+import LocalStorageModule from "./modules/LocalStorageModule.js";
 
 const warriorDiv = document.getElementById("warrior-div");
 const warriors = WarriorModule.getAll();
