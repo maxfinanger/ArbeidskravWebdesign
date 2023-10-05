@@ -20,14 +20,27 @@ const LocalStorageModule = (() => {
         localStorage.clear();
     };
 
-    const SaveResources = (resources) => {
-        const json = JSON.stringify(resources);
-        localStorage.setItem("resources", json);
+    const SaveResources = (gold, wood, metal) => {
+        const resources = {
+            gold: gold,
+            wood: wood,
+            metal: metal,
+        };
+        const resourcesJson = JSON.stringify(resources);
+        localStorage.setItem("resources", resourcesJson);
     };
 
     const GetResources = () => {
         const json = localStorage.getItem("resources");
-        return json ? JSON.parse(json) : [];
+        if (json) {
+            return JSON.parse(json);
+        } else {
+            return {
+                gold: 0,
+                wood: 0,
+                metal: 0,
+            };
+        }
     };
 
     return {
