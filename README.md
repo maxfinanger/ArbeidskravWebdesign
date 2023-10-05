@@ -16,6 +16,7 @@ STINA:
 
 - Få laget ferdig navbaren og lagt det inn på de andre filene
 - Lage ferdig boksene på your army for å vise frem hva du har kjøpt, starte med én(?)
+- Lage modul til nav-bar
 
 MAX:
 
