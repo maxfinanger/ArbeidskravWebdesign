@@ -68,10 +68,9 @@ const getWarrior = (id) => {
     // Deduct gold
     payForWarrior(warrior.price);
 
-    // Add the warrior to the army
-    const army = LocalStorageModule.GetArmy();
-    army.push(warrior);
-    LocalStorageModule.SaveArmy(army);
+    // Add the warrior to the army using the encapsulated function
+    LocalStorageModule.addWarriorToArmy(warrior);
+
     console.log(LocalStorageModule.GetArmy());
 };
 
@@ -174,4 +173,5 @@ const setEvents = () => {
     const content = showWarriors() + showEquipment();
     warriorDiv.innerHTML = content;
     setEvents();
+    // localStorage.clear();
 })();
