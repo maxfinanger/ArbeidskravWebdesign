@@ -35,11 +35,31 @@ const getWarrior = (id) => {
     const warrior = warriors.find((warrior) => warrior.id === id);
     console.log(warrior);
 
+    // Check if the player can afford the warrior
+    if (!canAffordWarrior(warrior.price)) {
+        console.log("You don't have enough gold to buy this warrior.");
+        return;
+    }
+
+    // Deduct gold
+    payForWarrior(warrior.price);
+
+    // Add the warrior to the army
     const army = LocalStorageModule.GetArmy();
     army.push(warrior);
-
     LocalStorageModule.SaveArmy(army);
     console.log(LocalStorageModule.GetArmy());
+};
+
+const payForWarrior = (goldPrice) => {
+    const resources = LocalStorageModule.GetResources();
+    resources.gold -= goldPrice;
+    LocalStorageModule.SaveResources(resources.gold);
+};
+
+const canAffordWarrior = (goldPrice) => {
+    const { gold } = LocalStorageModule.GetResources();
+    return gold >= goldPrice;
 };
 
 // adds event listeners to all warrior buttons
@@ -67,5 +87,5 @@ const setEvents = () => {
 (() => {
     showWarriors();
     setEvents();
-    //resetLocalStorage();
+    // resetLocalStorage();
 })();
