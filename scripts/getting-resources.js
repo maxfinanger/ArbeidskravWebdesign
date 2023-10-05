@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("wood-count").textContent = wood;
   };
 
-  // Initialising resources from LocalStorageModule and updating the counters
+  // Initialize resources from LocalStorageModule and update the counters
   updateResourceCounts();
 
   // Mine click event
