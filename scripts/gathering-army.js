@@ -183,15 +183,8 @@ const setEvents = () => {
 
 // Immediately invoke the start functions
 (() => {
-<<<<<<< Updated upstream
-  const content = showWarriors() + showEquipment();
-  warriorDiv.innerHTML = content;
-  setEvents();
-  //localStorage.clear();
-=======
     const content = showWarriors() + showEquipment();
     warriorDiv.innerHTML = content;
     setEvents();
-    // localStorage.clear();
->>>>>>> Stashed changes
+    //localStorage.clear();
 })();
