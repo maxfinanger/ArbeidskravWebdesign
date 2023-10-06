@@ -1,8 +1,8 @@
 const NavbarModule = (() => {
   const navbar = `
-     <nav class="bg-danger navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+     <nav class="bg-dark navbar navbar-dark navbar-expand-lg shadow-sm">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Army of Dragostea din Tei</a>
+        <a class="navbar-brand text-white" href="#">Army of Dragostea din Tei</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -18,18 +18,18 @@ const NavbarModule = (() => {
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a
-                class="nav-link active"
+                class="nav-link active text-white"
                 aria-current="page"
                 href="gathering-army.html"
                 >Shop</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="your-army.html">Your army</a>
+              <a class="nav-link text-white" href="your-army.html">Your army</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="getting-resources.html"
+              <a class="nav-link text-white" href="getting-resources.html"
                 >Getting resources</a
               >
             </li>
