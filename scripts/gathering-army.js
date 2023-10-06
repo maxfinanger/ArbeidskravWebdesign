@@ -11,7 +11,7 @@ const showWarriors = () => {
 
     warriors.forEach((warrior) => {
         const warriorHTML = `
-        <article class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+        <article class="col-12 col-md-4 col-lg-3 mb-3">
             <div class="shadow border border-rounded p-1 card h-100 d-flex flex-column justify-content-end">
                 <div class="card-content mb-auto">
                     <img src="images/${warrior.img}" alt="${warrior.name}" class="card-img-top warrior-image">
@@ -34,7 +34,7 @@ const showEquipment = () => {
 
     equipments.forEach((equipment) => {
         const equipmentHTML = `
-        <article class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+        <article class="col-12 col-md-4 col-lg-3 mb-3">
             <div class="shadow border border-rounded p-1 card h-100 d-flex flex-column justify-content-end">
                 <div class="card-content mb-auto">
                     <img src="images/${equipment.image}" alt="${equipment.name}" class="card-img-top">

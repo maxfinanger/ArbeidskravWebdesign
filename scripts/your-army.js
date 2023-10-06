@@ -1,16 +1,16 @@
 import LocalStorageModule from "./modules/LocalStorageModule.js";
 
 const outputArmySection = document.getElementById("output-section");
-const yourArmy = LocalStorageModule.GetArmy(); // Fetch the army
+const yourArmy = LocalStorageModule.GetArmy();
 
 const showWarriors = () => {
     const allWarriorsHTML = yourArmy
         .map(
             (warrior) => `
-        <article class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+        <article class="grid-item col-sm-12 col-md-6 col-lg-4">
             <div class="shadow border border-rounded p-1 card h-100 d-flex flex-column justify-content-end">
                 <div class="card-content mb-auto">
-                    <img src="images/${warrior.img}" alt="${warrior.name}" class="card-img-top warrior-image">
+                    <img src="images/${warrior.img}" alt="${warrior.name}" class="card-img-top imgSize warrior-image">
                     <h2>${warrior.name}</h2>
                     <p>Health: ${warrior.health}</p>
                 </div>
@@ -29,10 +29,10 @@ const showArmyEquipment = () => {
 
     armyEquipment.forEach((equipment) => {
         const equipmentHTML = `
-        <article class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+        <article class="grid-item col-sm-12 col-md-6 col-lg-4">
             <div class="shadow border border-rounded p-1 card h-100 d-flex flex-column justify-content-end">
                 <div class="card-content mb-auto">
-                    <img src="images/${equipment.image}" alt="${equipment.name}" class="card-img-top">
+                    <img src="images/${equipment.image}" alt="${equipment.name}" class="card-img-top imgSize">
                     <h2>${equipment.name}</h2>
                 </div>
             </div>
