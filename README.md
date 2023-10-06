@@ -1,24 +1,5 @@
 # ArbeidskravWebdesign
 
-Arbeidskrav for webdesign
+Work Assignment for Webdesign
 
-Arbeidsfordeling
-
-- Lage de 3 ulike HTML siden, med Header bar som er mobile first og skalerbar
-
-- Lage Module for warriors som object literal array som kan bli aksesert av andre JS filer.
-
-- Lage Local Storage som Lagrer brukerens backpack osv
-
-- Bruke GRID og lage css med framework
-
-STINA:
-
-- Få laget ferdig navbaren og lagt det inn på de andre filene
-- Lage ferdig boksene på your army for å vise frem hva du har kjøpt, starte med én(?)
-- Lage modul til nav-bar
-
-MAX:
-
-- LocalStorage til your army
-- Gjøre ferdig ressurser med localstorage
+Coded by Max, Marius and Stina
