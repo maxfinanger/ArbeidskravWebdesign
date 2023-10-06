@@ -1,0 +1,22 @@
+Template for feedback
+3-5 good things in the solution code
+1.	X
+2.	Y
+3.	Z
+4.	A
+5.	B 
+
+3-5 things that can be improved, and/or tips etc.
+1.	X
+2.	Y
+3.	Z
+4.	A
+5.	B 
+
+Examples of things that one can give feedback on
+-	Variable, and function names
+-	Tidyness
+-	Structure
+-	Code repetition
+-	Code improvements
+-	…other things
