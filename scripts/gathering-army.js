@@ -182,5 +182,5 @@ const setEvents = () => {
   const content = showWarriors() + showEquipment();
   warriorDiv.innerHTML = content;
   setEvents();
-  // localStorage.clear();
+  //localStorage.clear();
 })();
