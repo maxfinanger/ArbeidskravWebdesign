@@ -112,7 +112,6 @@ const resetLocalStorage = () => {
   LocalStorageModule.DeleteAll();
 };
 
-// sets all events
 // Gets equipment by id and adds it to the inventory (or any other suitable place)
 const getEquipment = (id) => {
   const equipment = equipments.find((equip) => equip.id === id);
@@ -145,6 +144,7 @@ const payForEquipment = (woodCost, metalCost) => {
   ); // Assuming the SaveResources method accepts all three resources
 };
 
+//Checks if the user can afford the equipment
 const canAffordEquipment = (woodCost, metalCost) => {
   const { wood, metal } = LocalStorageModule.GetResources();
   return wood >= woodCost && metal >= metalCost;
@@ -163,6 +163,7 @@ const equipmentBtn = () => {
   });
 };
 
+// Function to show a toast notification used for problemshooting
 const notify = (message) => {
   const toastElement = document.querySelector(".toast .toast-body");
   toastElement.textContent = message;
