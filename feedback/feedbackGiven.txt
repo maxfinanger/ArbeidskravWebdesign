@@ -12,13 +12,14 @@ Group 1
 3.	Recommend to make a dedicated module for local storage
 
 Group 2
-3-5 good things in the solution code
-1)	Good use of comments, and readable code
-2)	Semanticly correct code
-3)	Good functionality
-4)	Responsive design
+1.	Gode kommentarer, gjør det enkelt å lese koden 
+2.	Gode navner på variabler/funksjoner
+3.	God bruk av css til å style 
+4.	Fint å bruke en localStorage module for å ha god oversikt og struktur i koden
+5.	
 
 3-5 things that can be improved, and/or tips etc.
-1)	Could add more to module to avoid repetative code
-2)	Burger menu not correct
-3)	Photos could be scaled better
+1.	Kunne kanskje vært fint å ha to forskjellige seksjoner til warriors/dyr&våpen på your-army og gathering-army sidene
+2.	Kjøpsknappene til dyr/våpen er større enn kjøpsknappene til warriors. Kanskje fint å ha de i akkuratt samme størrelse for at alle produktboksene skal se likt ut? 
+3.	Jeg synes localStorage modulen er litt uoversiktlig. Vanskelig å skjønne hvilke funksjoner brukes på hviken side
+4.	Fargene er ikke veldig brukervennlige for fargebilde 
