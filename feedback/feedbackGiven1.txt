@@ -1,0 +1,20 @@
+Template for feedback
+3-5 good things in the solution code
+1. Very clean and clear code.
+2. Good understanding/use of module and Modules	
+3. User-friendly design and layout of the different webpages
+4. Good use of CSS and grid
+5. Very good use of media queries
+
+3-5 things that can be improved, and/or tips etc.
+1. To few comments to show the reader the usage of the functions
+2. Maybe it would have been enough with one css-file
+3. Heavy use of div's, and not section/article
+
+Examples of things that one can give feedback on
+-	Variable, and function names
+-	Tidyness
+-	Structure
+-	Code repetition
+-	Code improvements
+-	…other things
