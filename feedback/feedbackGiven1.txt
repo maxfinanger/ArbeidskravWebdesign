@@ -1,15 +1,16 @@
 Template for feedback
 3-5 good things in the solution code
-1. Very clean and clear code.
-2. Good understanding/use of module and Modules	
-3. User-friendly design and layout of the different webpages
-4. Good use of CSS and grid
-5. Very good use of media queries
+1.	Good use of functions
+2.	A nice and interactive page
+3.	Good function names, and comments
+4.	Easy to read and understad the code
+5.	Good use og grid and css 
 
 3-5 things that can be improved, and/or tips etc.
-1. To few comments to show the reader the usage of the functions
-2. Maybe it would have been enough with one css-file
-3. Heavy use of div's, and not section/article
+1.	Repetetive Code
+2.	Lack of essential functionalty for page to be whole
+3.	Recommend to make a dedicated module for local storage
+
 
 Examples of things that one can give feedback on
 -	Variable, and function names
