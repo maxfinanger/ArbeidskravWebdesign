@@ -12,3 +12,13 @@ Group 1
 3.	Recommend to make a dedicated module for local storage
 
 Group 2
+3-5 good things in the solution code
+1)	Good use of comments, and readable code
+2)	Semanticly correct code
+3)	Good functionality
+4)	Responsive design
+
+3-5 things that can be improved, and/or tips etc.
+1)	Could add more to module to avoid repetative code
+2)	Burger menu not correct
+3)	Photos could be scaled better
