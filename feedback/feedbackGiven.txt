@@ -1,4 +1,4 @@
-Template for feedback
+Group 1
 3-5 good things in the solution code
 1.	Good use of functions
 2.	A nice and interactive page
@@ -11,11 +11,4 @@ Template for feedback
 2.	Lack of essential functionalty for page to be whole
 3.	Recommend to make a dedicated module for local storage
 
-
-Examples of things that one can give feedback on
--	Variable, and function names
--	Tidyness
--	Structure
--	Code repetition
--	Code improvements
--	…other things
+Group 2

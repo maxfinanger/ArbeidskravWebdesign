@@ -1,4 +1,4 @@
-Template for feedback
+Group 1
 3-5 good things in the solution code
 1. Very clean and clear code.
 2. Good understanding/use of module and Modules	
@@ -11,10 +11,4 @@ Template for feedback
 2. Maybe it would have been enough with one css-file
 3. Heavy use of div's, and not section/article
 
-Examples of things that one can give feedback on
--	Variable, and function names
--	Tidyness
--	Structure
--	Code repetition
--	Code improvements
--	…other things
+Group 2
